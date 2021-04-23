@@ -10197,10 +10197,9 @@ header{
 }
 
 .bar{
- 
   margin-top: 75px;
   padding: 0;
-  
+  margin-left: -120px;
   
 }
 
@@ -10211,8 +10210,14 @@ header{
   position:relative;
   text-align:center;
   letter-spacing:2px;
-  cursor:pointer;
+  
 }
+
+.bar:hover{
+  text-align: center;
+ }
+
+ 
 
 .bar li:before{
   content: '';
@@ -10225,14 +10230,14 @@ header{
   border-radius: 50%;
   background-color:#EB641C;
   letter-spacing: 0px;
-
+  
 }
 
 .bar li:after{
   content:'';
   position:absolute;
-  width: 100%;
-  height: 3px;
+  width: 135%;
+  height: 10px;
   background-color: #EB641C;
   top: 25px;
   left: -50%;
@@ -10257,19 +10262,21 @@ header{
 
 .bar li.step:before{
   border-color: #EB641C;
-
 }
 
 .bar li.step + li:after{
   background-color:#D3D3D3;
   
+  
 }
+
 
 #progress-content{
   width:90%;
   margin:auto;
   background: #f3f3f3;
-  border-radius:4px;
+  border-radius:15px;
+  text-align: center;
 }
 
 #progress-content .section-content{
@@ -10277,6 +10284,31 @@ header{
   text-align:center;
 } 
 
+#progress_content2021{
+  width:90%;
+  margin:auto;
+  background: #f3f3f3;
+  border-radius:15px;
+  text-align: center;
+}
+
+#progress_content2021 .section-content{
+  padding: 30px 40px;
+  text-align:center;
+}
+
+#progress_content2018{
+  width:90%;
+  margin:auto;
+  background: #f3f3f3;
+  border-radius:15px;
+  text-align: center;
+}
+
+#progress_content2018 .section-content{
+  padding: 30px 40px;
+  text-align:center;
+}
 .defarColor{  
   width: 293px;
   height: 56px;
