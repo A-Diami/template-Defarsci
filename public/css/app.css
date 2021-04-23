@@ -10294,6 +10294,18 @@ header{
    margin-left:20px;
 }
 
+.collapse ul li a{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  color:#474749;
+}
+
+.collapse ul li a:hover
+{
+   text-decoration: underline;
+   color: #EB641C;
+}
 
  footer{
    background-color: #EB641C;
