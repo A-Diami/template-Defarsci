@@ -144,51 +144,15 @@
             <div class="container-fluid">
             <h2 class="font-weight-bold" style="color:#EB661F;font-size:60px;margin-top:50px;margin-left:50px">Equipe</h2><br/><br/>
                 <div class="row text-center">
+                @foreach ($equipes as $equipe )
                     <div class="col-lg-4">
                             <div class="card-body">
                                 <div class="img">
-                                    <img src="{{ asset('images/Rectangle_11.png')}}" class="img-fluid" />
+                                    <img src="{{asset('photo/'.$equipe->image)}}" class="img-fluid" />
                                 </div>
                             </div>
                     </div>
-                    <div class="col-lg-4">
-                            <div class="card-body">
-                                <div class="img">
-                                    <img src="{{ asset('images/Rectangle_11.png')}}" class="img-fluid" />
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-lg-4">
-                            <div class="card-body">
-                                <div class="img">
-                                    <img src="{{ asset('images/Rectangle_11.png')}}" class="img-fluid" />
-                                </div>
-                            </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                            <div class="card-body">
-                                <div class="img">
-                                    <img src="{{ asset('images/Rectangle_11.png')}}" class="img-fluid" />
-                                </div>
-                            </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                            <div class="card-body">
-                                <div class="img">
-                                    <img src="{{ asset('images/Rectangle_11.png')}}" class="img-fluid" />
-                                </div>
-                            </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                            <div class="card-body">
-                                <div class="img">
-                                    <img src="{{ asset('images/Rectangle_11.png')}}" class="img-fluid" />
-                                </div>
-                            </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </section>

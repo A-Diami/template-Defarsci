@@ -37,8 +37,8 @@
           <button style=" color:#464646; border:none; background-color:transparent"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></button>
           <button style=" color:#464646; border:none; background-color:transparent"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></button>
       </form>
-         
     </div>
+    
        
        
   </div>

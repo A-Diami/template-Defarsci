@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- header -->
-    <header >
+    <header>
         <div class="wrapper">
             <div class="content">
                 <h1 style="font-size:35px">Œuvrer pour le  Développement par l’Enseignement,<br/> la Formation, les Applications et la Recherche dans les Sciences.</h1>
@@ -111,6 +111,7 @@
 
     </section>
     <br/><br/><br/><br/><br/><br/>
+
         <!-- Equipe -->
         <section class="equipes">
             <div class="container">
@@ -161,24 +162,7 @@
                             </div>
                         </div>
                     </div>
- 
-            </div>
-                    <!-- <div class="col-lg-4">
-                        <div class="card text-center" style="background-color: #D3D3D3;border-radius: 90px 0px;font-style: normal;font-weight: normal;font-size: 20px; height:550px">
-                            <div class="card-body">
-                                <div class="im">
-                                    <img src="{{asset('images/Ellipse _1.png')}}"/>
-                                </div>
-                                <h4 class="font-weight-bold">Ibrahima KA</h4>
-                                <p style="color: #464646;">
-                                    "To be more specific, components of details of the development
-                                    process  indicates the importance of The Environment of Low Potential" 
-                                    (Thad Cohen in The Book of the Application
-                                </p>
-                            </div>            
-                        </div>
-                    </div> -->
-
+                </div>
                     <div class="wrap text-center py-4">
                         <button class="button" ><a href="{{route('equipe')}}" style="text-decoration:none; color:#EB641C; font-size:20px" >En savoir plus</a></button>
                     </div>
@@ -186,34 +170,35 @@
             </div>
         </section>
         <br/><br/>
+
         <!-- Partenaires -->
         <section class="partenaires">
-        <div class="container gap100">
-            <h1 class="text-center" style="color: #464646;font-size:45px; text-transform: uppercase;">Nos partenaires</h1>
-            <div class="row text-center" >
-                <div class="col-lg-4" >
-                    <img src="{{asset('images/img_1 1.png')}}" height="300"/>
-                </div>
+            <div class="container gap100">
+                <h1 class="text-center" style="color: #464646;font-size:45px; text-transform: uppercase;">Nos partenaires</h1>
+                <div class="row text-center" >
+                    <div class="col-lg-4" >
+                        <img src="{{asset('images/img_1 1.png')}}" height="300"/>
+                    </div>
 
-                <div class="col-lg-4" >
-                    <img src="{{asset('images/img_1 1.png')}}" height="300"/>
-                </div>
+                    <div class="col-lg-4" >
+                        <img src="{{asset('images/img_1 1.png')}}" height="300"/>
+                    </div>
 
-                <div class="col-lg-4" >
-                    <img src="{{asset('images/img_1 1.png')}}" height="300"/>
-                </div>
-                    <div style="top:50px"></div>
-                <div class="col-lg-4" >
-                    <img src="{{asset('images/img_1 1.png')}}" height="300"/>
-                </div>
-                <div class="col-lg-4" >
-                    <img src="{{asset('images/img_1 1.png')}}" height="300"/>
-                </div>
-                 <div class="col-lg-4" >
-                    <img src="{{asset('images/img_1 1.png')}}" height="300"/>
+                    <div class="col-lg-4" >
+                        <img src="{{asset('images/img_1 1.png')}}" height="300"/>
+                    </div>
+                        <div style="top:50px"></div>
+                    <div class="col-lg-4" >
+                        <img src="{{asset('images/img_1 1.png')}}" height="300"/>
+                    </div>
+                    <div class="col-lg-4" >
+                        <img src="{{asset('images/img_1 1.png')}}" height="300"/>
+                    </div>
+                    <div class="col-lg-4" >
+                        <img src="{{asset('images/img_1 1.png')}}" height="300"/>
+                    </div>
                 </div>
             </div>
-        </div>
         </section>
 </main>
 @endsection

@@ -2,6 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
+use App\Models\Image;
+
+use App\Models\Equipe;
+use App\Models\Departement;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -18,7 +23,8 @@ class PagesController extends Controller
 
     public function apropos()
     {
-        return view('template.apropos');
+        $equipes = Equipe::orderBy('updated_at', 'DESC')->get();
+        return view('template.apropos', compact('equipes'));
     }
 
     public function projet()
@@ -33,12 +39,15 @@ class PagesController extends Controller
 
     public function equipe()
     {
-        return view('template.equipe');
+        $equipes = Equipe::orderBy('updated_at', 'DESC')->get();
+        return view('template.equipe', compact('equipes'));
     }
 
     public function departement()
     {
-        return view('template.departement');
+        $departements = Departement::all();
+        $images = Image::all();
+        return view('template.departement', compact('departements','images'));
     }
 
     public function contact()
@@ -48,12 +57,14 @@ class PagesController extends Controller
 
     public function blog()
     {
-        return view('template.blog');
+        $posts = Blog::orderBy('updated_at', 'DESC')->get();
+        return view('template.blog', compact('posts'));
     }
 
-    public function showBlog()
+    public function show(Request $request, $post)
     {
-        return view('template.showBlog');
+       $post = Blog::where('slug',$post)->firstOrFail();
+        return view('template.showBlog', compact('post'));
     }
     /**
      * Show the form for creating a new resource.
@@ -76,16 +87,7 @@ class PagesController extends Controller
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
+    
 
     /**
      * Show the form for editing the specified resource.

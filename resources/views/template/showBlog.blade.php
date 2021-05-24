@@ -14,39 +14,12 @@
 
         <section class="description">
             <div class="container">
-                <h2 class="font-weight-bold" style="color:#EB641C; margin-top:60px">Les bases de la conception graphique</h2>
+                <h2 class="font-weight-bold" style="color:#EB641C; margin-top:60px">{{$post->title}}</h2>
                 <div class="colorApropos">
                     <p>
-                        Conversely, study of slight practices needs to be processed together 
-                        with the complete failure  of the supposed theory.  On the contrary, dimensions of the criterion the general 
-                        features and possibilities of the crucial component any productivity boost. This may be done through the
-                        set of related commands and controls.  
+                       {{$post->description}}
     
                     </p>
-                    <p>
-                        Conversely, study of slight practices needs to be processed together 
-                        with the complete failure  of the supposed theory.  On the contrary, dimensions of the criterion the general 
-                        features and possibilities of the crucial component any productivity boost. This may be done through the
-                        set of related commands and controls.  
-    
-                    </p>
-
-                    <p>
-                        Conversely, study of slight practices needs to be processed together 
-                        with the complete failure  of the supposed theory.  On the contrary, dimensions of the criterion the general 
-                        features and possibilities of the crucial component any productivity boost. This may be done through the
-                        set of related commands and controls.  
-    
-                    </p>
-
-                    <p>
-                        Conversely, study of slight practices needs to be processed together 
-                        with the complete failure  of the supposed theory.  On the contrary, dimensions of the criterion the general 
-                        features and possibilities of the crucial component any productivity boost. This may be done through the
-                        set of related commands and controls.  
-    
-                    </p>
-                    
                 </div>
             </div>
         </section>

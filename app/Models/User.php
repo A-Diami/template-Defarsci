@@ -20,6 +20,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'is_admin',
+        'profession',
+        'image',
     ];
 
     /**
@@ -40,4 +43,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function blogs(){
+        return $this->hasMany('App\Models\Blog');
+    }
 }
