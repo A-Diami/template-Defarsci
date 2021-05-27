@@ -3888,6 +3888,7 @@ input[type=button].btn-block {
 }
 .nav-link:hover, .nav-link:focus {
   text-decoration: none;
+ 
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -10016,6 +10017,7 @@ header{
     color:white;
 }
 
+
 .wrapper{
   display: table;
   width: 100%;
@@ -10025,10 +10027,7 @@ header{
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  font-weight: bold;
-  line-height: auto;
-  text-transform: uppercase;
- 
+  
 }
 
 .gap100{
@@ -10051,7 +10050,6 @@ header{
   line-height: 35px;
   align-items: center;
   text-align: center;
-  text-transform: uppercase;
   color: #EB661F;
   background-color: #fff;
   border: none;
@@ -10068,24 +10066,23 @@ header{
   color: #fff;
   transform: translateY(-7px);
 }
+
 .services{
   background-color: #F2F2F2;
   background-attachment: fixed;
+ 
+}
+.colCard{
+  background: #FFFFFF;
+  box-shadow: 10px 10px 30px rgba(100, 100, 100, 0.498039);
   
 }
-/* .card{
-  border: none;
-  box-shadow: 10px 10px 30px rgba(100, 100, 100, 0.498039);
-  background: #FFFFFF;
-  border-radius: 30px;
-  outline: none;
-  height: 357px;
-  padding: 75px 0px;
-} */
+
 .circle{
   padding: 12px;
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  margin-top:25px;
 }
 
 
@@ -10217,7 +10214,9 @@ header{
 .bar:hover{
   text-align: center;
  }
-
+nav div,ul,li,a{
+  margin-top: -15px;
+}
  
 
 .bar li:before{
@@ -10342,16 +10341,18 @@ header{
 
 .cd{
   box-shadow: 4px 20px 40px rgba(100, 100, 100, 0.498039);
-  border-radius: 0px 0px 45px 45px;
+  
 }
-
-
 
 .childcol:nth-child(even){
   margin-top: 75px;
 }
 
- footer{
+.link:hover{
+  text-decoration:none;
+}
+
+footer{
    background-color: #EB641C;
    height: 300px;
  }

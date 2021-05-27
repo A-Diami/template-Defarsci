@@ -40,7 +40,7 @@
         <section class="apropos">
             <div class="wrapperApropos">
                 <div class="contentApropos">
-                    <h1 style="font-size:75px">A propos</h1>
+                    <h1 style="font-style: normal;font-weight: bold;font-size: 90px;line-height: 117px;">A propos</h1>
                 </div>
             </div>
         </section>
@@ -48,7 +48,7 @@
         <section class="description">
             <div class="container">
                 
-                <h2 class="font-weight-bold" style="color:#EB641C;width:155px; height:35px; margin-top:60px">Description</h2>
+                <h2 class="font-weight-bold" style="color:#EB641C;width:155px; height:35px; margin-top:60px; font-style: normal;font-weight: bold;font-size: 30px;line-height: 35px;">Description</h2>
                 <div class="colorApropos">
                     <p>
                         Conversely, study of slight practices needs to be processed together 
@@ -71,7 +71,7 @@
 
         <section class="mission">
         <div class="container">
-                <h2 class="font-weight-bold" style="color:#EB641C;width:199px; height:35px; margin-top:60px">Nos missions</h2>
+                <h2 class="font-weight-bold" style="color:#EB641C;width:199px; height:35px; margin-top:60px;font-style: normal;font-weight: bold;font-size: 30px;line-height: 35px;">Nos missions</h2>
                 <div class="colorApropos">
                     <p>
                         Conversely, study of slight practices needs to be processed together 
@@ -133,7 +133,7 @@
         
         <section class="projets text-center">
             <div class="container">
-                <h2 class="font-weight-bold" style="color:#85ADDB;font-size:60px;margin-top:60px">Projets</h2>
+                <h2 class="font-weight-bold" style="color:#85ADDB;margin-top:60px;font-style: normal;font-weight: bold;font-size: 50px;line-height: 59px;">Projets</h2>
                 <div class="wrap"style="margin-top:40px;">
                     <button class="button" ><a href="{{route('projet')}}" style="text-decoration:none; color:#EB641C" >Découvrir</a></button>
                 </div>
@@ -142,7 +142,7 @@
             <br/></br>
         <section class="equipeApropos">
             <div class="container-fluid">
-            <h2 class="font-weight-bold" style="color:#EB661F;font-size:60px;margin-top:50px;margin-left:50px">Equipe</h2><br/><br/>
+            <h2 class="font-weight-bold" style="color:#EB661F;margin-top:70px;margin-left:50px;font-style: normal;font-weight: bold;font-size: 46px;line-height: 54px;">Equipe</h2><br/><br/>
                 <div class="row text-center">
                 @foreach ($equipes as $equipe )
                     <div class="col-lg-4">

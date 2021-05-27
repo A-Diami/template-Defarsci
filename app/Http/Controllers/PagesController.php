@@ -7,6 +7,7 @@ use App\Models\Image;
 
 use App\Models\Equipe;
 use App\Models\Departement;
+use App\Models\Projet;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -29,7 +30,9 @@ class PagesController extends Controller
 
     public function projet()
     {
-        return view('template.projet');
+        $projets = Projet::orderBy('updated_at', 'DESC')->get();
+
+        return view('template.projet',compact('projets'));
     }
 
     public function contribuez()

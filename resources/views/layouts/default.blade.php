@@ -75,6 +75,18 @@
 
                                 </nav>
                             </div>
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProjet" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Projet
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseProjet" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link" href="{{url('admin/projet/create')}}">Ajout</a>
+                                    <a class="nav-link" href="{{url('admin/projet')}}">Listes</a>
+                                </nav>
+                            </div>
+
                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseP" aria-expanded="false" aria-controls="collapseP">
                                 <div class="sb-nav-link-icon"><i class="fas fa-fw fa-users"></i></div>
                                 Equipes

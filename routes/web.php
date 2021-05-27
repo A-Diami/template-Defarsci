@@ -1,16 +1,18 @@
 <?php
 
-use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
-use App\Http\Controllers\DepartementtController;
-use App\Http\Controllers\EquipeController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\ImageController;
-use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
-
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ImageController;
+use App\Http\Controllers\PagesController;
+use App\Http\Controllers\EquipeController;
+use App\Http\Controllers\ProjetController;
+use App\Http\Controllers\SearchController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\DepartementtController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -42,11 +44,17 @@ Route::post('/admin/login', [AdminController::class, 'submit_login']);
 Route::get('/admin/dasboard', [AdminController::class, 'dasboard'])->middleware('is_admin');
 Route::get('/admin/logout', [AdminController::class, 'logout']);
 
+//Projets
+Route::get('/admin/projet/{id}/delete',[ProjetController::class, 'destroy']);
+Route::resource('/admin/projet',ProjetController::class);
 
 //Posts
 Route::get('/admin/post/{id}/delete',[PostController::class, 'destroy']);
 Route::resource('/admin/post',PostController::class);
 
+//Contact 
+Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::post('/mail', [ContactController::class, 'sendEmail'])->name('sendEmail');
 
 //Departement
 Route::get('/admin/departement/{id}/delete',[DepartementtController::class, 'destroy']);
@@ -66,6 +74,10 @@ Route::resource('/admin/equipe',EquipeController::class);
 Route::get('/admin/user/{id}/delete',[UserController::class, 'destroy']);
 Route::resource('/admin/user',UserController::class);
 Auth::routes();
+
+//search
+
+Route::post('seach-record',[SearchController::class,'search'])->name('search');
 
 Route::get('home',[HomeController::class,'index'])->name('home');
 Route::resource('userSimple',HomeController::class);

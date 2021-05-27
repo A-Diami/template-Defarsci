@@ -142,8 +142,7 @@ class PostController extends Controller
     public function destroy($id)
     {
         Blog::where('id',$id)->delete();
-        notify()->success("POST SUPPRIME");
-
+        
         return redirect('admin/post');
     }
 }

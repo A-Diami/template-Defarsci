@@ -5,7 +5,7 @@
         <section class="departement">
             <div class="wrapperApropos">
                 <div class="contentApropos">
-                    <h1 style="font-size:45px">Departements</h1>
+                    <h1 style="font-style: normal;font-weight: bold;font-size:45px;line-height:117px;">Departements</h1>
                 </div>
             </div>
         </section>

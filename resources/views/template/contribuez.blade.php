@@ -5,7 +5,7 @@
         <section class="contribuez">
             <div class="wrapperApropos">
                 <div class="contentApropos">
-                    <h1 style="font-size:50px">Contribuez</h1>
+                    <h1 style="font-style: normal;font-weight: bold;font-size: 55px;line-height: 117px;">Contribuez</h1>
                 </div>
             </div>
         </section>
